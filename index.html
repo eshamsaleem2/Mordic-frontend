@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mordic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Navbar -->
+   <header class="navbar">
+
+    <div class="logo">MORDIC</div>
+
+    <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+    >
+        ☰
+    </button>
+
+    <nav id="navMenu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#blog">Blog</a>
+        <a href="#more">More</a>
+    </nav>
+
+</header>
+
+    <!-- 2. Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p>WELCOME TO MORDIC</p>
+            <h1>BEAUTIFUL INTERIOR<br>TIMELESS STYLE</h1>
+            <p>
+                Discover thoughtfully designed interiors that bring comfort,
+    elegance and your personal style into every corner of your home.
+            </p>
+            <button id="getStartedBtn">Get Started</button>
+            <button id="learnMoreBtn">Learn More</button>
+        </div>
+        <div class="slider-dots">
+    <button class="slider-dot active"
+            data-slide="0"
+            aria-label="Show slide 1"></button>
+
+    <button class="slider-dot"
+            data-slide="1"
+            aria-label="Show slide 2"></button>
+
+    <button class="slider-dot"
+            data-slide="2"
+            aria-label="Show slide 3"></button>
+</div>
+    </section>
+
+  
+    <!-- Creative Concepts Section -->
+<section class="concepts" id="about">
+
+    <h2>
+        DESIGNING SPACES<br>
+        THAT INSPIRE LIVING
+    </h2>
+
+    <div class="concept-cards">
+
+        <div class="concept-card">
+            <img src="images/concept1.jpg"
+                 alt="Modern living room interior">
+        </div>
+
+        <div class="concept-card">
+            <img src="images/concept2.jpg"
+                 alt="Modern dining room interior">
+        </div>
+
+        <div class="concept-card">
+            <img src="images/concept3.jpg"
+                 alt="Modern bedroom interior">
+        </div>
+
+    </div>
+
+    <button class="concept-btn" id="conceptBtn">GET STARTED</button>
+
+    <p class="concept-description">
+       Thoughtfully designed interiors for your lifestyle.
+    </p>
+
+</section>
+
+    <!-- Features Section -->
+<section class="features" id="more">
+
+    <div class="feature-card">
+        <span class="feature-icon">🏅</span>
+        <h3>Best Quality</h3>
+    </div>
+
+    <div class="feature-card">
+        <span class="feature-icon">🚚</span>
+        <h3>Free Shipping</h3>
+    </div>
+
+    <div class="feature-card">
+        <span class="feature-icon">🛡️</span>
+        <h3>Warranty</h3>
+    </div>
+
+</section>
+
+
+<!-- Best Experience Section -->
+<section class="experience" id="contact">
+
+    <h2>
+        TRANSFORM YOUR SPACE<br>INTO
+        SOMETHING BEAUTIFUL
+    </h2>
+
+    <p class="experience-description">
+       We create stylishg, comfortable and
+       functional interiors that reflect
+       your personality and bring your 
+       vision to life.
+    </p>
+
+    <div class="experience-cards">
+
+        <div class="experience-card">
+            <img src="images/experience1.jpg"
+                 alt="Modern living room design">
+        </div>
+
+        <div class="experience-card">
+            <img src="images/experience2.jpg"
+                 alt="Minimalist home interior">
+        </div>
+
+        <div class="experience-card">
+            <img src="images/experience3.jpg"
+                 alt="Contemporary living room">
+        </div>
+
+    </div>
+
+    <div class="experience-arrows">
+        <span>›››››</span>
+    </div>
+
+</section>
+<footer class="footer" id="footer">
+    <div class="footer-container">
+
+        <!-- Brand Information -->
+        <div class="footer-column footer-about">
+            <h2 class="footer-logo">MORDIC<span>.</span></h2>
+            <p>
+                Transform your house into a beautiful home
+                with creative designs, timeless elegance
+                and comfortable living spaces.
+            </p>
+
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">Pinterest</a>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#more">Our Services</a></li>
+                <li><a href="#contact">Our Designs</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+        </div>
+
+        <!-- Our Services -->
+        <div class="footer-column">
+            <h3>Our Services</h3>
+            <ul>
+                <li><a href="#more">Interior Design</a></li>
+                <li><a href="#about">Living Room Design</a></li>
+                <li><a href="#about">Bedroom Design</a></li>
+                <li><a href="#about">Home Decoration</a></li>
+                <li><a href="#contact">Creative Concepts</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-column footer-contact">
+            <h3>Get In Touch</h3>
+            <p>Have a project in mind? Let's create something beautiful.</p>
+            <a class="footer-email"
+               href="mailto:hello@example.com">
+                hello@eshammordic.com
+            </a>
+            <a href="#contact" class="footer-cta">
+                Start Your Project →
+            </a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 MORDIC. All rights reserved.</p>
+        <a href="#home">Back to Top ↑</a>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

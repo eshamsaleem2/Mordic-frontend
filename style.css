@@ -1,0 +1,704 @@
+/* 1. Website Color Palette */
+:root {
+    --outer-green: #80947D;
+    --section-green: #63805B;
+    --dark-green: #345C35;
+    --cream: #F7F4DE;
+    --brown: #A85D2C;
+    --white: #FFFFFF;
+    --text-dark: #222222;
+}
+
+/* 2. Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 3. Body */
+body {
+    background-color: var(--outer-green);
+    font-family: Arial, sans-serif;
+    color: var(--text-dark);
+}
+
+/* 4. Navbar */
+.navbar {
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 5%;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* 5. Section Colors */
+.concepts {
+    background-color: var(--section-green);
+    color: var(--white);
+    text-align: center;
+    padding: 40px 5%;
+}
+
+.features {
+    background-color: var(--cream);
+    color: var(--brown);
+}
+
+.experience {
+    background-color: var(--white);
+    padding: 50px 5%;
+}
+
+.experience h2 {
+    color: var(--dark-green);
+}
+
+
+/* Main website container */
+body {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #80947D;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+    min-height: 75px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    gap: 20px;
+}
+
+.logo {
+    color: #A85D2C;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #222222;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 420px;
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("images/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 40px 6%;
+}
+
+.hero-content {
+    max-width: 520px;
+    color: #FFFFFF;
+}
+
+.hero-content p {
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.hero-content h1 {
+    font-size: clamp(32px, 5vw, 48px);
+    line-height: 1.15;
+    margin-bottom: 18px;
+}
+
+.hero-content button {
+    background-color: #A85D2C;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 25px;
+    margin: 10px 10px 0 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.hero-content button:last-child {
+    background-color: #FFFFFF;
+    color: #A85D2C;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        padding: 18px 12px;
+    }
+
+    .navbar nav {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar nav a {
+        font-size: 11px;
+    }
+
+    .hero {
+        min-height: 380px;
+        padding: 30px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+
+    .hero-content p {
+        font-size: 12px;
+    }
+}
+/* Creative Concepts Section */
+.concepts {
+    background-color: #63805B;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 35px 5% 45px;
+}
+
+.concepts h2 {
+    font-size: 30px;
+    line-height: 1.35;
+    font-weight: bold;
+    margin-bottom: 28px;
+}
+
+/* Three Interior Image Cards */
+.concept-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    margin: 0 auto 25px;
+    max-width: 900px;
+}
+
+.concept-card {
+    height: 220px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.concept-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+/* Image hover effect */
+.concept-card:hover img {
+    transform: scale(1.06);
+}
+
+/* Get Started Button */
+.concept-btn {
+    background-color: #A85D2C;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 28px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.concept-btn:hover {
+    background-color: #85451F;
+}
+
+/* Description */
+.concept-description {
+    color: #FFFFFF;
+    font-size: 12px;
+    line-height: 1.6;
+    max-width: 400px;
+    margin: 12px auto 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .concepts h2 {
+        font-size: 23px;
+    }
+
+    .concept-cards {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .concept-card {
+        height: 240px;
+    }
+}
+
+/* Features Section */
+.features {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 55px;
+    padding: 0 5%;
+    position: relative;
+    z-index: 2;
+}
+
+.feature-card {
+    background-color: #F7F4DE;
+    width: 150px;
+    min-height: 95px;
+    margin-top: -32px;
+    border-radius: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #A85D2C;
+    text-align: center;
+}
+
+.feature-icon {
+    font-size: 25px;
+}
+
+.feature-card h3 {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Best Experience Section */
+.experience {
+    background-color: #FFFFFF;
+    padding: 55px 5% 40px;
+}
+
+.experience h2 {
+    color: #345C35;
+    font-size: 32px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.experience-description {
+    color: #333333;
+    font-size: 12px;
+    line-height: 1.6;
+    max-width: 580px;
+    margin-bottom: 35px;
+}
+
+/* Three Images */
+.experience-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.experience-card {
+    height: 150px;
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+.experience-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.experience-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Decorative Arrows */
+.experience-arrows {
+    text-align: center;
+    margin-top: 25px;
+    color: #80947D;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .features {
+        gap: 8px;
+        padding: 0 10px;
+    }
+
+    .feature-card {
+        width: 33.33%;
+        min-height: 85px;
+        border-radius: 15px;
+    }
+
+    .feature-card h3 {
+        font-size: 10px;
+    }
+
+    .feature-icon {
+        font-size: 20px;
+    }
+
+    .experience {
+        padding: 40px 20px;
+    }
+
+    .experience h2 {
+        font-size: 24px;
+    }
+
+    .experience-cards {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .experience-card {
+        height: 200px;
+    }
+}
+
+/* Mobile layout improvements */
+@media (max-width: 600px) {
+
+    /* Navbar */
+    .navbar {
+        min-height: auto;
+        padding: 18px 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+    /* Hero section */
+    .hero {
+        min-height: 420px;
+        padding: 35px 22px;
+        background-position: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+        line-height: 1.15;
+        margin-bottom: 20px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .hero-content button {
+        padding: 12px 18px;
+        font-size: 14px;
+        margin-right: 5px;
+    }
+
+    /* Concepts heading */
+    .concepts {
+        padding: 35px 20px;
+    }
+
+    .concepts h2 {
+        font-size: 25px;
+        line-height: 1.4;
+    }
+
+    /* Concept images */
+    .concept-cards {
+        gap: 18px;
+    }
+
+    .concept-card {
+        height: 190px;
+    }
+}
+
+/* Hamburger Menu Button */
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    color: #345C35;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Mobile Navbar */
+@media (max-width: 700px) {
+
+    .navbar {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 18px 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        padding-top: 12px;
+    }
+
+    .navbar nav.active {
+        display: flex;
+    }
+
+    .navbar nav a {
+        width: 100%;
+        padding: 12px 0;
+        border-top: 1px solid #EEEEEE;
+    }
+}
+
+/* Hero Slider */
+.hero {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.5s ease;
+}
+
+/* Slider Dots */
+.slider-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    z-index: 2;
+}
+
+.slider-dot {
+    width: 9px;
+    height: 9px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+.slider-dot.active {
+    background-color: #FFFFFF;
+}
+
+
+/* ===== FOOTER ===== */
+.footer {
+    background-color: #263F35;
+    color: #F7F4DE;
+    padding: 65px 45px 20px;
+    margin-top: 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
+    gap: 40px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 22px;
+    color: #FFFFFF;
+}
+
+.footer-logo {
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin: 0 0 18px;
+    color: #FFFFFF;
+}
+
+.footer-logo span {
+    color: #D47A3D;
+}
+
+.footer-column p {
+    font-size: 14px;
+    line-height: 1.9;
+    color: #D6DFD6;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 13px;
+}
+
+.footer-column a {
+    color: #D6DFD6;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #E89A62;
+}
+
+.footer-socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 20px;
+}
+
+.footer-socials a {
+    font-size: 12px;
+    border: 1px solid #718477;
+    border-radius: 20px;
+    padding: 8px 12px;
+}
+
+.footer-socials a:hover {
+    background-color: #D47A3D;
+    border-color: #D47A3D;
+    color: #FFFFFF;
+}
+
+.footer-contact .footer-email {
+    display: inline-block;
+    margin: 0 0 22px;
+    color: #FFFFFF;
+    overflow-wrap: anywhere;
+}
+
+.footer-column .footer-cta {
+    display: block;
+    width: fit-content;
+    background-color: #B96C39;
+    color: #FFFFFF;
+    padding: 12px 18px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.footer-column .footer-cta:hover {
+    background-color: #D47A3D;
+    color: #FFFFFF;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 50px auto 0;
+    padding-top: 22px;
+    border-top: 1px solid #52685B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-bottom p {
+    color: #D6DFD6;
+    font-size: 13px;
+    margin: 0;
+}
+
+.footer-bottom a {
+    color: #F7F4DE;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.footer-bottom a:hover {
+    color: #E89A62;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .footer-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 35px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 550px) {
+    .footer {
+        padding: 45px 22px 20px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-bottom {
+        margin-top: 35px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
