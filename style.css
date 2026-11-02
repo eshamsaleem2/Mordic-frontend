@@ -17,11 +17,7 @@
 }
 
 /* 3. Body */
-body {
-    background-color: var(--outer-green);
-    font-family: Arial, sans-serif;
-    color: var(--text-dark);
-}
+
 
 /* 4. Navbar */
 .navbar {
@@ -68,13 +64,7 @@ body {
 
 
 /* Main website container */
-body {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: #80947D;
-    font-family: Arial, sans-serif;
-}
+
 
 /* Navigation Bar */
 .navbar {
@@ -700,5 +690,92 @@ body {
         margin-top: 35px;
         flex-direction: column;
         align-items: flex-start;
+    }
+}
+
+
+html {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    max-width: none;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: var(--outer-green);
+    font-family: Arial, sans-serif;
+    color: var(--text-dark);
+}
+
+/* FULL WIDTH WEBSITE FIX */
+
+.navbar,
+.hero,
+.concepts,
+.features,
+.experience,
+.footer {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Full width image layouts */
+
+.concept-cards,
+.experience-cards {
+    width: 100%;
+    max-width: none;
+}
+
+/* Footer content */
+
+.footer-container,
+.footer-bottom {
+    width: 100%;
+    max-width: none;
+}
+
+/* Responsive images */
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+    .concept-cards,
+    .experience-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .concept-cards,
+    .experience-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .features {
+        flex-wrap: wrap;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
     }
 }
